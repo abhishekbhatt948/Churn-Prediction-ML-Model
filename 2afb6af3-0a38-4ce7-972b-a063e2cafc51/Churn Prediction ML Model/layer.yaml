@@ -163,6 +163,25 @@ blocks:
   compute_settings:
     compute_environment_type: 1
     executor_image_id: null
+  description: Uses GridSearchCV to optimize Random Forest hyperparameters, comparing
+    baseline vs tuned model performance on churn prediction test set
+  height: 1000
+  id: a6bf3fee-0e99-479f-a84d-799412b76c5d
+  layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+  name: hyperparameter_tuning
+  parent_id: null
+  properties: {}
+  status: 3
+  type: 1
+  variables: null
+  width: 1600
+  x: 12000
+  y: 4200
+- auto_size: false
+  canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+  compute_settings:
+    compute_environment_type: 1
+    executor_image_id: null
   description: Generates model evaluation visualizations including ROC curve, confusion
     matrix, feature importance, and performance metrics charts
   height: 1000
@@ -207,6 +226,11 @@ edges:
   layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
   source: 187e12ae-7fc7-4b76-b6c3-fd5700ba0d72
   target: bb171c1e-257f-4646-b574-3f197ab9fdf9
+- canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+  id: 31f2808c-27f8-4e90-8ea6-99bfe859ebbb
+  layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+  source: 187e12ae-7fc7-4b76-b6c3-fd5700ba0d72
+  target: a6bf3fee-0e99-479f-a84d-799412b76c5d
 - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
   id: 3697863a-e05d-427d-beef-5c844099dac9
   layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a

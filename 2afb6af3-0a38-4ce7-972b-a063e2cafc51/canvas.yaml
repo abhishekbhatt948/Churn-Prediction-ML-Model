@@ -55,6 +55,25 @@ layers:
     compute_settings:
       compute_environment_type: 1
       executor_image_id: null
+    description: Demonstrates FastAPI-compatible endpoint patterns for churn prediction
+      service with single/batch request handlers
+    height: 1000
+    id: 63382fee-0528-4027-a135-3975b063e2f7
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: churn_prediction_api
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 12000
+    y: 1900
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
     description: 'Encodes categorical features and prepares final dataset for ML modeling:
       binary label encoding + one-hot encoding for 44 total features with target variable
       split'
@@ -227,6 +246,11 @@ layers:
     layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
     source: 82966ed7-f72b-4722-a651-924749a7d13e
     target: 1cbd9513-275c-490f-a237-6d958c26d66f
+  - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    id: ba6f27bc-3a5e-4613-a304-fc3d25ab57a4
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    source: 7eab71c8-1fb2-4371-9754-4215a2514f53
+    target: 63382fee-0528-4027-a135-3975b063e2f7
   id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
   name: Churn Prediction ML Model
   type: 1

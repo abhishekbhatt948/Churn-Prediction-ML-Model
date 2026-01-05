@@ -1,0 +1,209 @@
+id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+name: Churn Prediction ML Model
+project_id: 21ffdd87-6f47-4fbb-ad41-70fe456e01f5
+global_imports: []
+python_global_imports: ''
+r_global_imports: ''
+requirements: []
+linux_packages: []
+environment_variables: []
+is_public: false
+organization_id: 706c3fee-b833-4834-ada8-995562866d3b
+layers:
+- blocks:
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Splits encoded features 80/20, scales with StandardScaler, trains
+      Gradient Boosting classifier, computes accuracy/precision/recall/F1/ROC-AUC
+      metrics and confusion matrix
+    height: 1000
+    id: 187e12ae-7fc7-4b76-b6c3-fd5700ba0d72
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: train_test_split_and_model_training
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 10000
+    y: 0
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Encodes categorical features numerically and generates correlation
+      heatmap plus bar charts showing feature relationships with churn
+    height: 1000
+    id: 1cbd9513-275c-490f-a237-6d958c26d66f
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: feature_correlations
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 6000
+    y: 0
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: 'Encodes categorical features and prepares final dataset for ML modeling:
+      binary label encoding + one-hot encoding for 44 total features with target variable
+      split'
+    height: 1000
+    id: 6dd47d31-255b-4c8c-8366-1e29f425a8e9
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: categorical_encoding_and_final_prep
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 8000
+    y: 0
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Visualizes customer churn distribution with charts comparing churn
+      rates across contract types, internet service, tech support, and tenure groups
+    height: 1000
+    id: 82966ed7-f72b-4722-a651-924749a7d13e
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: churn_distribution_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 4000
+    y: 0
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Identifies top churn drivers using model feature importance and delivers
+      actionable retention strategies grouped by priority
+    height: 1000
+    id: 9305addb-b515-4f4d-8b56-2217a26ba6e7
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: feature_importance_insights
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 14000
+    y: 0
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Analyzes telecom churn dataset for data quality including missing
+      values, duplicates, data types, categorical distributions, numerical statistics,
+      and churn class balance
+    height: 1000
+    id: a32bb444-055d-4b30-9b4d-b889881157aa
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: data_quality_check
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 2000
+    y: 0
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Generates model evaluation visualizations including ROC curve, confusion
+      matrix, feature importance, and performance metrics charts
+    height: 1000
+    id: bb171c1e-257f-4646-b574-3f197ab9fdf9
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: model_visualizations
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 12000
+    y: 0
+  - auto_size: false
+    canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    compute_settings:
+      compute_environment_type: 1
+      executor_image_id: null
+    description: Generates synthetic telecom customer data with 7,043 records including
+      demographics, service usage, billing, and churn labels for predictive modeling
+    height: 1000
+    id: efa62959-0b06-4a04-8460-bade2e8a1cb3
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    name: load_telecom_churn_data
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 0
+  canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+  edges:
+  - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    id: 102ff01c-3ed3-4b9b-915c-9ee53d3f766b
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    source: 1cbd9513-275c-490f-a237-6d958c26d66f
+    target: 6dd47d31-255b-4c8c-8366-1e29f425a8e9
+  - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    id: 2a2c74f1-3d90-4aa8-981b-f5897ba3b10f
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    source: 187e12ae-7fc7-4b76-b6c3-fd5700ba0d72
+    target: bb171c1e-257f-4646-b574-3f197ab9fdf9
+  - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    id: 575c6b1e-e0c4-46fc-804c-8953f8cebc49
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    source: 6dd47d31-255b-4c8c-8366-1e29f425a8e9
+    target: 187e12ae-7fc7-4b76-b6c3-fd5700ba0d72
+  - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    id: 71096116-03d5-44aa-8f42-5964f53a4be7
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    source: a32bb444-055d-4b30-9b4d-b889881157aa
+    target: 82966ed7-f72b-4722-a651-924749a7d13e
+  - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    id: 734d0b56-4f57-4f65-943b-291c92db900b
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    source: efa62959-0b06-4a04-8460-bade2e8a1cb3
+    target: a32bb444-055d-4b30-9b4d-b889881157aa
+  - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    id: 9d601959-64a6-4013-abb0-1e520800e9d2
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    source: bb171c1e-257f-4646-b574-3f197ab9fdf9
+    target: 9305addb-b515-4f4d-8b56-2217a26ba6e7
+  - canvas_id: 2afb6af3-0a38-4ce7-972b-a063e2cafc51
+    id: b6d0c9e4-ce02-437c-922b-386e1b8d8731
+    layer_id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+    source: 82966ed7-f72b-4722-a651-924749a7d13e
+    target: 1cbd9513-275c-490f-a237-6d958c26d66f
+  id: 9456f0a3-18a4-4da4-a684-fb57abad0e4a
+  name: Churn Prediction ML Model
+  type: 1
+assets: []

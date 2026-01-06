@@ -7,7 +7,7 @@ r_global_imports: ''
 requirements: []
 linux_packages: []
 environment_variables: []
-is_public: false
+is_public: true
 organization_id: 706c3fee-b833-4834-ada8-995562866d3b
 layers:
 - blocks:

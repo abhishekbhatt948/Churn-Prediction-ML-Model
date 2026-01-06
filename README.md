@@ -1,3 +1,5 @@
+Project About: This Project is Part of "Zerve AI Hackethon Compitition". Project is about selecting real Business Problam and solve using create a ML Model, Tunned, getting matricx and Deployed by creating API for results checks.
+
 ML Model : "Production-Ready Customer Churn Prediction System"
 
 Description

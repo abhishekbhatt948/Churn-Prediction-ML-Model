@@ -25,7 +25,7 @@ layers:
     name: train_test_split_and_model_training
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -44,7 +44,7 @@ layers:
     name: feature_correlations
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -63,7 +63,7 @@ layers:
     name: churn_prediction_api
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -83,7 +83,7 @@ layers:
     name: categorical_encoding_and_final_prep
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -102,7 +102,7 @@ layers:
     name: churn_prediction_service
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -121,7 +121,7 @@ layers:
     name: churn_distribution_analysis
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -140,7 +140,7 @@ layers:
     name: feature_importance_insights
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -160,7 +160,7 @@ layers:
     name: data_quality_check
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -179,7 +179,7 @@ layers:
     name: hyperparameter_tuning
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -198,7 +198,7 @@ layers:
     name: model_visualizations
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
@@ -217,7 +217,7 @@ layers:
     name: load_telecom_churn_data
     parent_id: null
     properties: {}
-    status: 3
+    status: 1
     type: 1
     variables: null
     width: 1600
